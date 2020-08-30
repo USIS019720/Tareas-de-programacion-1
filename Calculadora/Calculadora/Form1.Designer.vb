@@ -43,7 +43,7 @@ Partial Class Calculadora
         Me.cboOperaciones.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboOperaciones.FormattingEnabled = True
         Me.cboOperaciones.Items.AddRange(New Object() {"Seleccione una opcion", "Suma", "Resta", "Multiplicacion", "Division"})
-        Me.cboOperaciones.Location = New System.Drawing.Point(394, 115)
+        Me.cboOperaciones.Location = New System.Drawing.Point(502, 65)
         Me.cboOperaciones.Name = "cboOperaciones"
         Me.cboOperaciones.Size = New System.Drawing.Size(121, 21)
         Me.cboOperaciones.TabIndex = 27
