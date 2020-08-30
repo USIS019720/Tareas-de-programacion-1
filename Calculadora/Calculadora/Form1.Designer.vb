@@ -30,7 +30,7 @@ Partial Class Calculadora
         '
         'btnProcesar
         '
-        Me.btnProcesar.Location = New System.Drawing.Point(162, 178)
+        Me.btnProcesar.Location = New System.Drawing.Point(216, 110)
         Me.btnProcesar.Name = "btnProcesar"
         Me.btnProcesar.Size = New System.Drawing.Size(116, 44)
         Me.btnProcesar.TabIndex = 7
@@ -40,7 +40,7 @@ Partial Class Calculadora
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(125, 121)
+        Me.Label1.Location = New System.Drawing.Point(196, 37)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(30, 13)
         Me.Label1.TabIndex = 6
@@ -56,7 +56,7 @@ Partial Class Calculadora
         '
         'txtntabla
         '
-        Me.txtntabla.Location = New System.Drawing.Point(178, 114)
+        Me.txtntabla.Location = New System.Drawing.Point(232, 34)
         Me.txtntabla.Name = "txtntabla"
         Me.txtntabla.Size = New System.Drawing.Size(100, 20)
         Me.txtntabla.TabIndex = 4
