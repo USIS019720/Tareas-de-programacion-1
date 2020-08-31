@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Calculadora
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,57 +20,57 @@ Partial Class Calculadora
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.lblRespuestaRomano = New System.Windows.Forms.Label()
-        Me.txtnumero = New System.Windows.Forms.TextBox()
-        Me.lblnumero = New System.Windows.Forms.Label()
-        Me.btnCalcular = New System.Windows.Forms.Button()
+        Me.cboMun = New System.Windows.Forms.ComboBox()
+        Me.cboDepto = New System.Windows.Forms.ComboBox()
+        Me.lblmun = New System.Windows.Forms.Label()
+        Me.lbldepto = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'lblRespuestaRomano
+        'cboMun
         '
-        Me.lblRespuestaRomano.AutoSize = True
-        Me.lblRespuestaRomano.Location = New System.Drawing.Point(191, 34)
-        Me.lblRespuestaRomano.Name = "lblRespuestaRomano"
-        Me.lblRespuestaRomano.Size = New System.Drawing.Size(99, 13)
-        Me.lblRespuestaRomano.TabIndex = 11
-        Me.lblRespuestaRomano.Text = "Numero Romano: ?"
+        Me.cboMun.FormattingEnabled = True
+        Me.cboMun.Location = New System.Drawing.Point(232, 35)
+        Me.cboMun.Name = "cboMun"
+        Me.cboMun.Size = New System.Drawing.Size(121, 21)
+        Me.cboMun.TabIndex = 13
         '
-        'txtnumero
+        'cboDepto
         '
-        Me.txtnumero.Location = New System.Drawing.Point(83, 31)
-        Me.txtnumero.Name = "txtnumero"
-        Me.txtnumero.Size = New System.Drawing.Size(102, 20)
-        Me.txtnumero.TabIndex = 10
+        Me.cboDepto.FormattingEnabled = True
+        Me.cboDepto.Location = New System.Drawing.Point(68, 33)
+        Me.cboDepto.Name = "cboDepto"
+        Me.cboDepto.Size = New System.Drawing.Size(121, 21)
+        Me.cboDepto.TabIndex = 12
         '
-        'lblnumero
+        'lblmun
         '
-        Me.lblnumero.AutoSize = True
-        Me.lblnumero.Location = New System.Drawing.Point(38, 34)
-        Me.lblnumero.Name = "lblnumero"
-        Me.lblnumero.Size = New System.Drawing.Size(42, 13)
-        Me.lblnumero.TabIndex = 9
-        Me.lblnumero.Text = "Capital:"
+        Me.lblmun.AutoSize = True
+        Me.lblmun.Location = New System.Drawing.Point(198, 38)
+        Me.lblmun.Name = "lblmun"
+        Me.lblmun.Size = New System.Drawing.Size(31, 13)
+        Me.lblmun.TabIndex = 11
+        Me.lblmun.Text = "Mun:"
         '
-        'btnCalcular
+        'lbldepto
         '
-        Me.btnCalcular.Location = New System.Drawing.Point(61, 100)
-        Me.btnCalcular.Name = "btnCalcular"
-        Me.btnCalcular.Size = New System.Drawing.Size(148, 47)
-        Me.btnCalcular.TabIndex = 8
-        Me.btnCalcular.Text = "Calcular"
-        Me.btnCalcular.UseVisualStyleBackColor = True
+        Me.lbldepto.AutoSize = True
+        Me.lbldepto.Location = New System.Drawing.Point(23, 33)
+        Me.lbldepto.Name = "lbldepto"
+        Me.lbldepto.Size = New System.Drawing.Size(39, 13)
+        Me.lbldepto.TabIndex = 10
+        Me.lbldepto.Text = "Depto:"
         '
         'Calculadora
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.lblRespuestaRomano)
-        Me.Controls.Add(Me.txtnumero)
-        Me.Controls.Add(Me.lblnumero)
-        Me.Controls.Add(Me.btnCalcular)
+        Me.Controls.Add(Me.cboMun)
+        Me.Controls.Add(Me.cboDepto)
+        Me.Controls.Add(Me.lblmun)
+        Me.Controls.Add(Me.lbldepto)
         Me.Name = "Calculadora"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -78,8 +78,8 @@ Partial Class Calculadora
 
     End Sub
 
-    Friend WithEvents lblRespuestaRomano As Label
-    Friend WithEvents txtnumero As TextBox
-    Friend WithEvents lblnumero As Label
-    Friend WithEvents btnCalcular As Button
+    Friend WithEvents cboMun As ComboBox
+    Friend WithEvents cboDepto As ComboBox
+    Friend WithEvents lblmun As Label
+    Friend WithEvents lbldepto As Label
 End Class
