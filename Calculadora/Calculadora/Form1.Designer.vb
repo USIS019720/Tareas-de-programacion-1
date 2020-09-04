@@ -192,6 +192,7 @@ Partial Class Calculadora
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Pie Cuadrado", "Vara Cuadrada", "Yarda Cuadrada", "Metro Cuadrado", "Tareas", "Manzanas", "Hectareas"})
         Me.ComboBox1.Location = New System.Drawing.Point(36, 77)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
@@ -200,6 +201,7 @@ Partial Class Calculadora
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"Pie Cuadrado", "Vara Cuadrada", "Yarda Cuadrada", "Metro Cuadrado", "Tareas", "Manzanas", "Hectareas"})
         Me.ComboBox2.Location = New System.Drawing.Point(210, 77)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
