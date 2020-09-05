@@ -29,9 +29,7 @@
         If optExponenciacion.Checked Then
             lblrespuesta.Text = num1 ^ num2  'Realizar el proceso de exponenciacion....
         End If
-        If optResiduo.Checked Then
-            lblrespuesta.Text = num1 Mod num2  'Realizar el proceso de residuo....
-        End If
+
 
 
         Select Case cboOperaciones.SelectedIndex
