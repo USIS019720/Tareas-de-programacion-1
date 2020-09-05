@@ -24,7 +24,6 @@ Partial Class Calculadora
     Private Sub InitializeComponent()
         Me.Universal = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
@@ -33,13 +32,16 @@ Partial Class Calculadora
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.cmdconvertir = New System.Windows.Forms.Button()
+        Me.cbxsalida = New System.Windows.Forms.ComboBox()
+        Me.cbxentrada = New System.Windows.Forms.ComboBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtvalor = New System.Windows.Forms.Label()
+        Me.TextBox = New System.Windows.Forms.TextBox()
+        Me.lblr = New System.Windows.Forms.Label()
+        Me.lblum = New System.Windows.Forms.Label()
         Me.Universal.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -72,23 +74,6 @@ Partial Class Calculadora
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Universal"
         Me.TabPage1.UseVisualStyleBackColor = True
-        '
-        'TabPage2
-        '
-        Me.TabPage2.Controls.Add(Me.Button2)
-        Me.TabPage2.Controls.Add(Me.ComboBox2)
-        Me.TabPage2.Controls.Add(Me.ComboBox1)
-        Me.TabPage2.Controls.Add(Me.Label7)
-        Me.TabPage2.Controls.Add(Me.Label6)
-        Me.TabPage2.Controls.Add(Me.Label5)
-        Me.TabPage2.Controls.Add(Me.TextBox4)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(528, 283)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Area(Superficie)"
-        Me.TabPage2.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -155,30 +140,51 @@ Partial Class Calculadora
         Me.Label1.TabIndex = 8
         Me.Label1.Text = "Cantidad"
         '
-        'TextBox4
+        'TabPage2
         '
-        Me.TextBox4.Location = New System.Drawing.Point(61, 30)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 0
+        Me.TabPage2.Controls.Add(Me.lblum)
+        Me.TabPage2.Controls.Add(Me.lblr)
+        Me.TabPage2.Controls.Add(Me.cmdconvertir)
+        Me.TabPage2.Controls.Add(Me.cbxsalida)
+        Me.TabPage2.Controls.Add(Me.cbxentrada)
+        Me.TabPage2.Controls.Add(Me.Label7)
+        Me.TabPage2.Controls.Add(Me.Label6)
+        Me.TabPage2.Controls.Add(Me.txtvalor)
+        Me.TabPage2.Controls.Add(Me.TextBox)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(528, 283)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "Area(Superficie)"
+        Me.TabPage2.UseVisualStyleBackColor = True
         '
-        'Label5
+        'cmdconvertir
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(6, 33)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(49, 13)
-        Me.Label5.TabIndex = 1
-        Me.Label5.Text = "Cantidad"
+        Me.cmdconvertir.Location = New System.Drawing.Point(132, 119)
+        Me.cmdconvertir.Name = "cmdconvertir"
+        Me.cmdconvertir.Size = New System.Drawing.Size(133, 67)
+        Me.cmdconvertir.TabIndex = 6
+        Me.cmdconvertir.Text = "Convertir"
+        Me.cmdconvertir.UseVisualStyleBackColor = True
         '
-        'Label6
+        'cbxsalida
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(6, 85)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(24, 13)
-        Me.Label6.TabIndex = 2
-        Me.Label6.Text = "De:"
+        Me.cbxsalida.FormattingEnabled = True
+        Me.cbxsalida.Items.AddRange(New Object() {"Pie Cuadrado", "Vara Cuadrada", "Yarda Cuadrada", "Metro Cuadrado", "Tareas", "Manzanas", "Hectareas"})
+        Me.cbxsalida.Location = New System.Drawing.Point(210, 77)
+        Me.cbxsalida.Name = "cbxsalida"
+        Me.cbxsalida.Size = New System.Drawing.Size(121, 21)
+        Me.cbxsalida.TabIndex = 5
+        '
+        'cbxentrada
+        '
+        Me.cbxentrada.FormattingEnabled = True
+        Me.cbxentrada.Items.AddRange(New Object() {"Pie Cuadrado", "Vara Cuadrada", "Yarda Cuadrada", "Metro Cuadrado", "Tareas", "Manzanas", "Hectareas"})
+        Me.cbxentrada.Location = New System.Drawing.Point(36, 77)
+        Me.cbxentrada.Name = "cbxentrada"
+        Me.cbxentrada.Size = New System.Drawing.Size(121, 21)
+        Me.cbxentrada.TabIndex = 4
         '
         'Label7
         '
@@ -189,32 +195,48 @@ Partial Class Calculadora
         Me.Label7.TabIndex = 3
         Me.Label7.Text = "A:"
         '
-        'ComboBox1
+        'Label6
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Pie Cuadrado", "Vara Cuadrada", "Yarda Cuadrada", "Metro Cuadrado", "Tareas", "Manzanas", "Hectareas"})
-        Me.ComboBox1.Location = New System.Drawing.Point(36, 77)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 4
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(6, 85)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(24, 13)
+        Me.Label6.TabIndex = 2
+        Me.Label6.Text = "De:"
         '
-        'ComboBox2
+        'txtvalor
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Pie Cuadrado", "Vara Cuadrada", "Yarda Cuadrada", "Metro Cuadrado", "Tareas", "Manzanas", "Hectareas"})
-        Me.ComboBox2.Location = New System.Drawing.Point(210, 77)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox2.TabIndex = 5
+        Me.txtvalor.AutoSize = True
+        Me.txtvalor.Location = New System.Drawing.Point(6, 33)
+        Me.txtvalor.Name = "txtvalor"
+        Me.txtvalor.Size = New System.Drawing.Size(49, 13)
+        Me.txtvalor.TabIndex = 1
+        Me.txtvalor.Text = "Cantidad"
         '
-        'Button2
+        'TextBox
         '
-        Me.Button2.Location = New System.Drawing.Point(132, 119)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(133, 67)
-        Me.Button2.TabIndex = 6
-        Me.Button2.Text = "Convertir"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.TextBox.Location = New System.Drawing.Point(61, 30)
+        Me.TextBox.Name = "TextBox"
+        Me.TextBox.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox.TabIndex = 0
+        '
+        'lblr
+        '
+        Me.lblr.AutoSize = True
+        Me.lblr.Location = New System.Drawing.Point(350, 157)
+        Me.lblr.Name = "lblr"
+        Me.lblr.Size = New System.Drawing.Size(13, 13)
+        Me.lblr.TabIndex = 7
+        Me.lblr.Text = "0"
+        '
+        'lblum
+        '
+        Me.lblum.AutoSize = True
+        Me.lblum.Location = New System.Drawing.Point(265, 225)
+        Me.lblum.Name = "lblum"
+        Me.lblum.Size = New System.Drawing.Size(13, 13)
+        Me.lblum.TabIndex = 8
+        Me.lblum.Text = "0"
         '
         'Calculadora
         '
@@ -244,11 +266,13 @@ Partial Class Calculadora
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button2 As Button
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cmdconvertir As Button
+    Friend WithEvents cbxsalida As ComboBox
+    Friend WithEvents cbxentrada As ComboBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txtvalor As Label
+    Friend WithEvents TextBox As TextBox
+    Friend WithEvents lblum As Label
+    Friend WithEvents lblr As Label
 End Class
