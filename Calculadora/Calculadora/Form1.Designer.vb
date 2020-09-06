@@ -25,9 +25,9 @@ Partial Class Calculadora
         Me.Universal = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtRespuesta = New System.Windows.Forms.TextBox()
+        Me.txtFall = New System.Windows.Forms.TextBox()
+        Me.txtScan = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -47,6 +47,8 @@ Partial Class Calculadora
         Me.Label6 = New System.Windows.Forms.Label()
         Me.label33 = New System.Windows.Forms.Label()
         Me.txtvalor = New System.Windows.Forms.TextBox()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.Universal.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -65,52 +67,56 @@ Partial Class Calculadora
         '
         'TabPage1
         '
+        Me.TabPage1.BackColor = System.Drawing.Color.OrangeRed
+        Me.TabPage1.Controls.Add(Me.Button5)
+        Me.TabPage1.Controls.Add(Me.Button4)
         Me.TabPage1.Controls.Add(Me.Button1)
-        Me.TabPage1.Controls.Add(Me.TextBox3)
-        Me.TabPage1.Controls.Add(Me.TextBox2)
-        Me.TabPage1.Controls.Add(Me.TextBox1)
+        Me.TabPage1.Controls.Add(Me.txtRespuesta)
+        Me.TabPage1.Controls.Add(Me.txtFall)
+        Me.TabPage1.Controls.Add(Me.txtScan)
         Me.TabPage1.Controls.Add(Me.Label4)
         Me.TabPage1.Controls.Add(Me.Label3)
         Me.TabPage1.Controls.Add(Me.Label2)
         Me.TabPage1.Controls.Add(Me.Label1)
-        Me.TabPage1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabPage1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage1.Size = New System.Drawing.Size(588, 402)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Universal"
-        Me.TabPage1.UseVisualStyleBackColor = True
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.Color.Black
+        Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Location = New System.Drawing.Point(242, 179)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(100, 53)
         Me.Button1.TabIndex = 15
         Me.Button1.Text = "Convertir"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
-        'TextBox3
+        'txtRespuesta
         '
-        Me.TextBox3.Location = New System.Drawing.Point(121, 136)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(130, 21)
-        Me.TextBox3.TabIndex = 14
+        Me.txtRespuesta.Location = New System.Drawing.Point(121, 136)
+        Me.txtRespuesta.Name = "txtRespuesta"
+        Me.txtRespuesta.Size = New System.Drawing.Size(130, 21)
+        Me.txtRespuesta.TabIndex = 14
         '
-        'TextBox2
+        'txtFall
         '
-        Me.TextBox2.Location = New System.Drawing.Point(323, 56)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(148, 21)
-        Me.TextBox2.TabIndex = 13
+        Me.txtFall.Location = New System.Drawing.Point(323, 56)
+        Me.txtFall.Name = "txtFall"
+        Me.txtFall.Size = New System.Drawing.Size(148, 21)
+        Me.txtFall.TabIndex = 13
         '
-        'TextBox1
+        'txtScan
         '
-        Me.TextBox1.Location = New System.Drawing.Point(112, 56)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(130, 21)
-        Me.TextBox1.TabIndex = 12
+        Me.txtScan.Location = New System.Drawing.Point(112, 56)
+        Me.txtScan.Name = "txtScan"
+        Me.txtScan.Size = New System.Drawing.Size(130, 21)
+        Me.txtScan.TabIndex = 12
         '
         'Label4
         '
@@ -125,7 +131,7 @@ Partial Class Calculadora
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(42, 139)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(75, 15)
+        Me.Label3.Size = New System.Drawing.Size(66, 15)
         Me.Label3.TabIndex = 10
         Me.Label3.Text = "Respuesta"
         '
@@ -134,16 +140,16 @@ Partial Class Calculadora
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(249, 59)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(68, 15)
+        Me.Label2.Size = New System.Drawing.Size(60, 15)
         Me.Label2.TabIndex = 9
         Me.Label2.Text = "Unidades"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(42, 59)
+        Me.Label1.Location = New System.Drawing.Point(42, 56)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(64, 15)
+        Me.Label1.Size = New System.Drawing.Size(56, 15)
         Me.Label1.TabIndex = 8
         Me.Label1.Text = "Cantidad"
         '
@@ -318,6 +324,28 @@ Partial Class Calculadora
         Me.txtvalor.Size = New System.Drawing.Size(166, 21)
         Me.txtvalor.TabIndex = 0
         '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.Black
+        Me.Button4.ForeColor = System.Drawing.Color.White
+        Me.Button4.Location = New System.Drawing.Point(121, 179)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(100, 53)
+        Me.Button4.TabIndex = 16
+        Me.Button4.Text = "Salir"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.Black
+        Me.Button5.ForeColor = System.Drawing.Color.White
+        Me.Button5.Location = New System.Drawing.Point(362, 179)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(100, 53)
+        Me.Button5.TabIndex = 17
+        Me.Button5.Text = "Borrar"
+        Me.Button5.UseVisualStyleBackColor = False
+        '
         'Calculadora
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -342,9 +370,9 @@ Partial Class Calculadora
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtRespuesta As TextBox
+    Friend WithEvents txtFall As TextBox
+    Friend WithEvents txtScan As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
@@ -363,4 +391,6 @@ Partial Class Calculadora
     Friend WithEvents Label8 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
 End Class

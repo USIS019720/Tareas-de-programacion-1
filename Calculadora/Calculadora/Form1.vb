@@ -174,4 +174,25 @@
         lblum.Text = ""
         txtvalor.Text = ""
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim Scan, Fall, Respuesta As String
+        Scan = txtScan.Text
+        Fall = txtFall.Text
+        Respuesta = txtRespuesta.Text
+
+        txtRespuesta.Text = (Scan / Fall).ToString() + "/" + (Scan Mod Fall).ToString()
+
+
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        End
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        txtScan.Text = ""
+        txtFall.Text = ""
+        txtRespuesta.Text = ""
+    End Sub
 End Class
