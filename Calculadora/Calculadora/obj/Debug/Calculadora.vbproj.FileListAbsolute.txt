@@ -10,3 +10,5 @@ C:\Users\David\source\repos\Tareas-de-programacion-1\Calculadora\Calculadora\obj
 C:\Users\David\source\repos\Tareas-de-programacion-1\Calculadora\Calculadora\obj\Debug\Calculadora.exe
 C:\Users\David\source\repos\Tareas-de-programacion-1\Calculadora\Calculadora\obj\Debug\Calculadora.xml
 C:\Users\David\source\repos\Tareas-de-programacion-1\Calculadora\Calculadora\obj\Debug\Calculadora.pdb
+C:\Users\David\source\repos\Tareas-de-programacion-1\Calculadora\Calculadora\bin\Debug\Database1.mdf
+C:\Users\David\source\repos\Tareas-de-programacion-1\Calculadora\Calculadora\bin\Debug\Database1_log.ldf
